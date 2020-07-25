@@ -1,0 +1,11 @@
+prefix=@Prefix@
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: cfakemicwavplayer
+Description: The FakeMicWavPlayer library C binding
+Version: 0.0.1
+Cflags: -I${includedir}
+Requires: fakemicwavplayer
+Libs: -L${libdir} -lCFakeMicWavPlayer
